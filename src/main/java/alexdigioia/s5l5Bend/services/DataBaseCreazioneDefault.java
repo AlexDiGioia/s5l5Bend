@@ -1,17 +1,20 @@
 package alexdigioia.s5l5Bend.services;
 
 import alexdigioia.s5l5Bend.entities.Edificio;
+import alexdigioia.s5l5Bend.entities.Postazione;
 import alexdigioia.s5l5Bend.repositories.EdificioRepository;
+import alexdigioia.s5l5Bend.repositories.PostazioneRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.UUID;
-
 @Service
-public class EdificioService {
+public class DataBaseCreazioneDefault {
 
     @Autowired
     private EdificioRepository edificioRepository;
+
+    @Autowired
+    private PostazioneRepository postazioneRepository;
 
     @Autowired
     private Edificio recintoTRex;
@@ -19,16 +22,17 @@ public class EdificioService {
     @Autowired
     private Edificio millenniumFalcon;
 
-    public Edificio salvaEdificio(Edificio edificio) {
-        return edificioRepository.save(edificio);
-    }
+    @Autowired
+    private Postazione postazionePrivata;
 
-    public Edificio trovaEdificio(UUID id) {
-        return edificioRepository.findById(id).orElse(null);
-    }
+    @Autowired
+    private Postazione cabinaPilotaggio;
 
-    public void saveEdificiDefault() {
+    public void startDatabase() {
         edificioRepository.save(recintoTRex);
         edificioRepository.save(millenniumFalcon);
+
+        postazioneRepository.save(postazionePrivata);
+        postazioneRepository.save(cabinaPilotaggio);
     }
 }

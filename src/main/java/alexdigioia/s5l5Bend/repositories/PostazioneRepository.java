@@ -1,7 +1,7 @@
 package alexdigioia.s5l5Bend.repositories;
 
 import alexdigioia.s5l5Bend.entities.Postazione;
-import alexdigioia.s5l5Bend.entities.TipoPostazione;
+import alexdigioia.s5l5Bend.enums.TipoPostazione;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

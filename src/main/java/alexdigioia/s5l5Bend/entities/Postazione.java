@@ -1,5 +1,6 @@
 package alexdigioia.s5l5Bend.entities;
 
+import alexdigioia.s5l5Bend.enums.TipoPostazione;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

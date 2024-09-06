@@ -1,4 +1,4 @@
-package alexdigioia.s5l5Bend.entities;
+package alexdigioia.s5l5Bend.enums;
 
 public enum TipoPostazione {
     PRIVATO,

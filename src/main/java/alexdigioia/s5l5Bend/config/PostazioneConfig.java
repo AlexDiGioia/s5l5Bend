@@ -2,7 +2,7 @@ package alexdigioia.s5l5Bend.config;
 
 import alexdigioia.s5l5Bend.entities.Edificio;
 import alexdigioia.s5l5Bend.entities.Postazione;
-import alexdigioia.s5l5Bend.entities.TipoPostazione;
+import alexdigioia.s5l5Bend.enums.TipoPostazione;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
