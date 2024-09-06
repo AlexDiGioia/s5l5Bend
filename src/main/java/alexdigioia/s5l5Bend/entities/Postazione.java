@@ -26,4 +26,11 @@ public class Postazione {
 
     @ManyToOne
     private Edificio edificio;
+
+    public Postazione(String descrizione, TipoPostazione tipo, int numeroMassimoOccupanti, Edificio edificio) {
+        this.descrizione = descrizione;
+        this.tipo = tipo;
+        this.numeroMassimoOccupanti = numeroMassimoOccupanti;
+        this.edificio = edificio;
+    }
 }
