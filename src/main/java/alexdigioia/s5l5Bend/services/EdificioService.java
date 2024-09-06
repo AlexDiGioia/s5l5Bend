@@ -27,8 +27,8 @@ public class EdificioService {
         return edificioRepository.findById(id).orElse(null);
     }
 
-    public void saveEdificiDefault() {
-        edificioRepository.save(recintoTRex);
-        edificioRepository.save(millenniumFalcon);
-    }
+    //public void saveEdificiDefault() {
+    //    edificioRepository.save(recintoTRex);
+    //    edificioRepository.save(millenniumFalcon);
+    //}
 }
